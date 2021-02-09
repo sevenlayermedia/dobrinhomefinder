@@ -1,0 +1,14 @@
+// posts
+.col-posts {
+	.post-excerpt {
+		border-top: 2px solid $blue;
+		a, a:hover, a:active {
+			color: $blue;
+			text-decoration: none;
+			border-bottom: 1px solid $blue;
+		}
+		&:last-child {
+			border-bottom: 2px solid $blue;
+		}
+	}
+}

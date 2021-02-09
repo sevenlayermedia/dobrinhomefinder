@@ -1,0 +1,21 @@
+// colors
+	// background colors
+	.yellow-bg {
+		background-color: $primary-color;
+	}
+// positioning
+	// backgrounds
+	.bg-position-top {
+		background-position: top!important;
+	}
+	.bg-position-bottom {
+		background-position: bottom!important;
+	}
+	.bg-position-center {
+		background-position: center!important;
+	}
+// pagination
+.pagination {
+	justify-content: center;
+	padding: 15px 0;
+}

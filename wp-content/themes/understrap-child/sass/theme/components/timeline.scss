@@ -1,0 +1,126 @@
+// timeline
+.timeline {
+	position: relative;
+	&::before {
+		content: '';
+		width: 5px;
+		height: 95%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $blue;
+	}
+	.timeline-item {
+		width: 100%;
+		margin-bottom: 30px;
+		&:nth-child(even) {
+			.timeline-content {
+				float: right;
+				padding: 40px 30px 10px 30px;
+				.timeline-date {
+					right: auto;
+					left: 0;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					border-style: solid;
+					width: 0;
+					height: 0;
+					top: 30px;
+					left: -15px;
+					border-width: 10px 15px 10px 0;
+					border-color: transparent #f5f5f5 transparent transparent;
+				}
+			}
+		}
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	.timeline-content {
+		position: relative;
+		width: 45%;
+		padding: 30px;
+		background: #f5f5f5;
+		box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+		&::after {
+			content: '';
+			position: absolute;
+			border-style: solid;
+			width: 0;
+			height: 0;
+			top: 25px;
+			right: -15px;
+			border-width: 10px 0 10px 15px;
+			border-color: transparent transparent transparent #f5f5f5;
+		}
+	}
+	.timeline-img {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 50%;
+		margin-top: 25px;
+		margin-left: -10px;
+		background-color: $blue;
+		border: 2px solid #deebf6;
+		border-radius: 50%;
+	}
+	.timeline-date {
+		display: inline-block;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-weight: 700;
+		color: $blue;
+	}
+}
+@media screen and (min-width: 768px) {
+	.timeline {
+		.timeline-date {
+			right: 0;
+			left: auto;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.timeline {
+		&::before {
+			left: 50px;
+		}
+		.timeline-img {
+			left: 50px;
+		}
+		.timeline-content {
+			max-width: 100%;
+			width: auto;
+			margin-left: 70px;
+		}
+		.timeline-item {
+			&:nth-child(even) {
+				.timeline-content {
+					float: none;
+				}
+			}
+			&:nth-child(odd) {
+				.timeline-content {
+					&::after {
+						content: '';
+						position: absolute;
+						border-style: solid;
+						width: 0;
+						height: 0;
+						top: 30px;
+						left: -15px;
+						border-width: 10px 15px 10px 0;
+						border-color: transparent #f5f5f5 transparent transparent;
+					}
+				}
+			}
+		}
+	}
+}

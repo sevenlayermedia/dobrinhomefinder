@@ -1,0 +1,1212 @@
+[
+    {
+        "key": "group_5dc1c56626312",
+        "title": "Page Builder",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": true,
+        "description": "",
+        "fields": {
+            "field_59dea892a2e58": {
+                "key": "field_59dea892a2e58",
+                "name": "",
+                "type": "tab",
+                "parent": "group_5dc1c56626312",
+                "label": "Header Layout",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 0
+            },
+            "field_5ba5483b2a267": {
+                "key": "field_5ba5483b2a267",
+                "name": "page_header_content",
+                "type": "flexible_content",
+                "parent": "group_5dc1c56626312",
+                "label": "Content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_5c9a7e5cf337b": {
+                        "key": "layout_5c9a7e5cf337b",
+                        "name": "menu",
+                        "label": "Menu",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_5ba55122c9ce7": {
+                        "key": "layout_5ba55122c9ce7",
+                        "name": "hero_static",
+                        "label": "Hero Static",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_5cacfdfd91bf0": {
+                        "key": "layout_5cacfdfd91bf0",
+                        "name": "heading",
+                        "label": "Heading",
+                        "display": "row",
+                        "min": "",
+                        "max": "2"
+                    },
+                    "layout_5cc0b531ecb1a": {
+                        "key": "layout_5cc0b531ecb1a",
+                        "name": "full_width_row",
+                        "label": "Full Width Row",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    }
+                },
+                "button_label": "Add Row",
+                "min": "",
+                "max": "",
+                "menu_order": 1
+            },
+            "field_59dec6c9e5f73": {
+                "key": "field_59dec6c9e5f73",
+                "name": "",
+                "type": "tab",
+                "parent": "group_5dc1c56626312",
+                "label": "Page Layout",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 2
+            },
+            "field_5d22c5a7b4587": {
+                "key": "field_5d22c5a7b4587",
+                "name": "page_title",
+                "type": "text",
+                "parent": "group_5dc1c56626312",
+                "label": "Page Title",
+                "instructions": "Alternate H1 page title.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 3
+            },
+            "field_5e3492305eeed": {
+                "key": "field_5e3492305eeed",
+                "name": "page_background",
+                "type": "group",
+                "parent": "group_5dc1c56626312",
+                "label": "Page Background",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "menu_order": 4
+            },
+            "field_5a8f2704d52ce": {
+                "key": "field_5a8f2704d52ce",
+                "name": "page_layout_content",
+                "type": "flexible_content",
+                "parent": "group_5dc1c56626312",
+                "label": "Content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_5ba40af732502": {
+                        "key": "layout_5ba40af732502",
+                        "name": "full_width_row",
+                        "label": "Full Width Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5ba40aab222c9": {
+                        "key": "layout_5ba40aab222c9",
+                        "name": "2_column_row",
+                        "label": "2 Column Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5d477cfb67e19": {
+                        "key": "layout_5d477cfb67e19",
+                        "name": "3_column_row",
+                        "label": "3 Column Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_600498bb768a9": {
+                        "key": "layout_600498bb768a9",
+                        "name": "faq",
+                        "label": "FAQ",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5dc1c55e13008": {
+                        "key": "layout_5dc1c55e13008",
+                        "name": "posts",
+                        "label": "Posts",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5fa8746f3e284": {
+                        "key": "layout_5fa8746f3e284",
+                        "name": "products",
+                        "label": "Products",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5e9b50e8c52bd": {
+                        "key": "layout_5e9b50e8c52bd",
+                        "name": "distributors",
+                        "label": "Distributors",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Add Row",
+                "min": "",
+                "max": "",
+                "menu_order": 5
+            }
+        }
+    },
+    {
+        "key": "group_60047b628a7e9",
+        "title": "Theme Settings",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "fields": {
+            "field_5bba3923a73b3": {
+                "key": "field_5bba3923a73b3",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Layout",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0,
+                "menu_order": 0
+            },
+            "field_5bba393ca73b4": {
+                "key": "field_5bba393ca73b4",
+                "name": "layout",
+                "type": "radio",
+                "parent": "group_60047b628a7e9",
+                "label": "Layout",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Boxed": "Boxed",
+                    "Full-Width": "Full-Width"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "Full-Width",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0,
+                "menu_order": 1
+            },
+            "field_594d5b79ab895": {
+                "key": "field_594d5b79ab895",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Brand",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0,
+                "menu_order": 2
+            },
+            "field_5acbb582cc043": {
+                "key": "field_5acbb582cc043",
+                "name": "site_logo_option",
+                "type": "checkbox",
+                "parent": "group_60047b628a7e9",
+                "label": "Logo Option",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "SVG": "SVG",
+                    "Alternate Logo": "Alternate Logo"
+                },
+                "allow_custom": 0,
+                "save_custom": 0,
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "menu_order": 3
+            },
+            "field_594d5b9a5bb75": {
+                "key": "field_594d5b9a5bb75",
+                "name": "site_primary_logo",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Logo Primary",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg, jpeg, png",
+                "menu_order": 4
+            },
+            "field_5acbb4411e5b1": {
+                "key": "field_5acbb4411e5b1",
+                "name": "site_primary_logo_svg",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Logo Primary SVG",
+                "instructions": "SVG is not supported by browsers IE 8 and down and Android 2.3 and down. Fall back image is required.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5acbb582cc043",
+                            "operator": "==",
+                            "value": "SVG"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg",
+                "menu_order": 5
+            },
+            "field_5acbb606f65f8": {
+                "key": "field_5acbb606f65f8",
+                "name": "site_alternate_logo_svg",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Alternate Logo SVG",
+                "instructions": "SVG is not supported by browsers IE 8 and down and Android 2.3 and down. Fall back image is required.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5acbb582cc043",
+                            "operator": "==",
+                            "value": "SVG"
+                        },
+                        {
+                            "field": "field_5acbb582cc043",
+                            "operator": "==",
+                            "value": "Alternate Logo"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg",
+                "menu_order": 6
+            },
+            "field_5acbb651e9fc6": {
+                "key": "field_5acbb651e9fc6",
+                "name": "site_alternate_logo",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Logo Alternate",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5acbb582cc043",
+                            "operator": "==",
+                            "value": "Alternate Logo"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg, jpeg, png",
+                "menu_order": 7
+            },
+            "field_5952835797e50": {
+                "key": "field_5952835797e50",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Social Media",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0,
+                "menu_order": 8
+            },
+            "field_5fc2c63e96d72": {
+                "key": "field_5fc2c63e96d72",
+                "name": "social_links",
+                "type": "group",
+                "parent": "group_60047b628a7e9",
+                "label": "Social Links",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "menu_order": 9
+            },
+            "field_5acd0d88cb131": {
+                "key": "field_5acd0d88cb131",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Header",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 10
+            },
+            "field_5bba2617afafa": {
+                "key": "field_5bba2617afafa",
+                "name": "header_content",
+                "type": "flexible_content",
+                "parent": "group_60047b628a7e9",
+                "label": "Content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_5e9cb095b2152": {
+                        "key": "layout_5e9cb095b2152",
+                        "name": "alert_bar",
+                        "label": "Alert Bar",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5cae5cf06b8e2": {
+                        "key": "layout_5cae5cf06b8e2",
+                        "name": "top_navbar",
+                        "label": "Top Navbar",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_5d2b8c4b4267b": {
+                        "key": "layout_5d2b8c4b4267b",
+                        "name": "main_navbar",
+                        "label": "Main Navbar",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_5d34acf732863": {
+                        "key": "layout_5d34acf732863",
+                        "name": "hero_static",
+                        "label": "Hero Static",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    },
+                    "5bba263065244": {
+                        "key": "5bba263065244",
+                        "name": "hero_slider",
+                        "label": "Hero Slider",
+                        "display": "row",
+                        "min": "",
+                        "max": "1"
+                    }
+                },
+                "button_label": "Add Row",
+                "min": "",
+                "max": "",
+                "menu_order": 11
+            },
+            "field_5e2719d769ed8": {
+                "key": "field_5e2719d769ed8",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Posts",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 12
+            },
+            "field_5e271a9869ed9": {
+                "key": "field_5e271a9869ed9",
+                "name": "post_default_featured_image",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Default Featured Image",
+                "instructions": "Image is responsive and cropped center top (i.e. area of focus). There is no minimum upload dimension. Maximum upload dimension is 992px by unlimited height with a file size 2MB or less. Images should be 72dpi.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": 992,
+                "max_height": "",
+                "max_size": 2,
+                "mime_types": "jpg, jpeg, png",
+                "menu_order": 13
+            },
+            "field_5e9cd8534e2c4": {
+                "key": "field_5e9cd8534e2c4",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Team",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 14
+            },
+            "field_5eb84a52272f3": {
+                "key": "field_5eb84a52272f3",
+                "name": "team_icon",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Team Icon",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 15
+            },
+            "field_5e9cd8124e2c3": {
+                "key": "field_5e9cd8124e2c3",
+                "name": "team_member_default_photo",
+                "type": "image",
+                "parent": "group_60047b628a7e9",
+                "label": "Default Team Member Photo",
+                "instructions": "Image is responsive and cropped center top (i.e. area of focus). There is no minimum upload dimension. Maximum upload dimension is 992px by unlimited height with a file size 2MB or less. Images should be 72dpi.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": 992,
+                "max_height": "",
+                "max_size": 2,
+                "mime_types": "",
+                "menu_order": 16
+            },
+            "field_5d477997797cc": {
+                "key": "field_5d477997797cc",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Pre-Footer",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 17
+            },
+            "field_5d477646588a8": {
+                "key": "field_5d477646588a8",
+                "name": "pre_footer_content",
+                "type": "flexible_content",
+                "parent": "group_60047b628a7e9",
+                "label": "Content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "5b8ff420dd9f2": {
+                        "key": "5b8ff420dd9f2",
+                        "name": "full_width_row",
+                        "label": "Full Width Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5b900330797f3": {
+                        "key": "layout_5b900330797f3",
+                        "name": "2_column_row",
+                        "label": "2 Column Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5fb9bd14b3cd7": {
+                        "key": "layout_5fb9bd14b3cd7",
+                        "name": "products_row",
+                        "label": "Products",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "min": "",
+                "max": "",
+                "button_label": "Add Row",
+                "menu_order": 18
+            },
+            "field_59551509471cd": {
+                "key": "field_59551509471cd",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Footer",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "menu_order": 19
+            },
+            "field_5cf1711ada9e3": {
+                "key": "field_5cf1711ada9e3",
+                "name": "bootstrap_customization",
+                "type": "true_false",
+                "parent": "group_60047b628a7e9",
+                "label": "Bootstrap Customization",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "Visible",
+                "ui_off_text": "Hidden",
+                "menu_order": 20
+            },
+            "field_5cf17125da9e4": {
+                "key": "field_5cf17125da9e4",
+                "name": "footer_wrapper",
+                "type": "group",
+                "parent": "group_60047b628a7e9",
+                "label": "Wrapper",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5cf1711ada9e3",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "menu_order": 21
+            },
+            "field_5cf1712bda9eb": {
+                "key": "field_5cf1712bda9eb",
+                "name": "footer_container",
+                "type": "group",
+                "parent": "group_60047b628a7e9",
+                "label": "Container",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5cf1711ada9e3",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "menu_order": 22
+            },
+            "field_5cf17132da9f3": {
+                "key": "field_5cf17132da9f3",
+                "name": "footer_row",
+                "type": "group",
+                "parent": "group_60047b628a7e9",
+                "label": "Row",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5cf1711ada9e3",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "menu_order": 23
+            },
+            "field_5b8ff3daebc0d": {
+                "key": "field_5b8ff3daebc0d",
+                "name": "footer_content",
+                "type": "flexible_content",
+                "parent": "group_60047b628a7e9",
+                "label": "Content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "5b8ff420dd9f2": {
+                        "key": "5b8ff420dd9f2",
+                        "name": "full_width_row",
+                        "label": "Full Width Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5b900330797f3": {
+                        "key": "layout_5b900330797f3",
+                        "name": "2_column_row",
+                        "label": "2 Column Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5bca3e1e28074": {
+                        "key": "layout_5bca3e1e28074",
+                        "name": "3_column_row",
+                        "label": "3 Column Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5bca3b8cf2d29": {
+                        "key": "layout_5bca3b8cf2d29",
+                        "name": "4_column_row",
+                        "label": "4 Column Row",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5cc7269e990e4": {
+                        "key": "layout_5cc7269e990e4",
+                        "name": "gallery",
+                        "label": "Gallery",
+                        "display": "row",
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Add Row",
+                "min": "",
+                "max": "",
+                "menu_order": 24
+            },
+            "field_5abc090e786c3": {
+                "key": "field_5abc090e786c3",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "CSS \/ JS",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0,
+                "menu_order": 25
+            },
+            "field_5abbe6a39c18e": {
+                "key": "field_5abbe6a39c18e",
+                "name": "enqueue_css",
+                "type": "checkbox",
+                "parent": "group_60047b628a7e9",
+                "label": "Enqueue CSS",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Animate": "Animate"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0,
+                "menu_order": 26
+            },
+            "field_5abbe7c19c18f": {
+                "key": "field_5abbe7c19c18f",
+                "name": "enqueue_js",
+                "type": "checkbox",
+                "parent": "group_60047b628a7e9",
+                "label": "Enqueue JS",
+                "instructions": "Scripts are enqueued before &lt;\/body&gt; unless required before &lt;\/head&gt;. Font Awesome is natively supported in Understrap, Sticky is natively supported in Bootstrap 4 and Lazy Load is natively supported in WordPress 5.5.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Cookies": "Cookies",
+                    "Isotope Filter & Sort": "Isotope Filter & Sort",
+                    "Modernizr": "Modernizr",
+                    "Social Share": "Social Share",
+                    "Viewport Checker": "Viewport Checker"
+                },
+                "allow_custom": 0,
+                "default_value": [
+                    "Modernizr"
+                ],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0,
+                "menu_order": 27
+            },
+            "field_5b50b6fc98e90": {
+                "key": "field_5b50b6fc98e90",
+                "name": "cookies",
+                "type": "repeater",
+                "parent": "group_60047b628a7e9",
+                "label": "Cookies",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5abbe7c19c18f",
+                            "operator": "==",
+                            "value": "Cookies"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5b50c03720adf",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Cookie",
+                "menu_order": 28
+            },
+            "field_5accce1c83d88": {
+                "key": "field_5accce1c83d88",
+                "name": "modernizr_detects",
+                "type": "checkbox",
+                "parent": "group_60047b628a7e9",
+                "label": "Modernizr Detects",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5abbe7c19c18f",
+                            "operator": "==",
+                            "value": "Modernizr"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "CSS Object Fit": "CSS Object Fit",
+                    "SVG": "SVG"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0,
+                "menu_order": 29
+            },
+            "field_5abcfde027a65": {
+                "key": "field_5abcfde027a65",
+                "name": "",
+                "type": "tab",
+                "parent": "group_60047b628a7e9",
+                "label": "Integrations",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0,
+                "menu_order": 30
+            },
+            "field_5abcfedf218f2": {
+                "key": "field_5abcfedf218f2",
+                "name": "enqueue_applications",
+                "type": "checkbox",
+                "parent": "group_60047b628a7e9",
+                "label": "Applications",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Google Tag Manager": "Google Tag Manager",
+                    "Google Analytics": "Google Analytics",
+                    "Google Maps": "Google Maps"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0,
+                "menu_order": 31
+            },
+            "field_5abd00296be94": {
+                "key": "field_5abd00296be94",
+                "name": "application_google_tag_manager",
+                "type": "text",
+                "parent": "group_60047b628a7e9",
+                "label": "Google Tag Manager",
+                "instructions": "The JavaScript is placed after the opening <head> tag and the snippet is placed after the opening <body> tag on every page of the website. Replace GTM-XXXX with the websites container ID.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5abcfedf218f2",
+                            "operator": "==",
+                            "value": "Google Tag Manager"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "GTM-XXXX",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 32
+            },
+            "field_5fc5a0b770d3d": {
+                "key": "field_5fc5a0b770d3d",
+                "name": "application_google_analytics_id",
+                "type": "text",
+                "parent": "group_60047b628a7e9",
+                "label": "Google Analytics ID",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5abcfedf218f2",
+                            "operator": "==",
+                            "value": "Google Analytics"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 33
+            },
+            "field_5ad7589909072": {
+                "key": "field_5ad7589909072",
+                "name": "application_google_maps_api_key",
+                "type": "text",
+                "parent": "group_60047b628a7e9",
+                "label": "Google Maps API Key",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5abcfedf218f2",
+                            "operator": "==",
+                            "value": "Google Maps"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 34
+            }
+        }
+    }
+]

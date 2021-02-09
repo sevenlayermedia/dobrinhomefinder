@@ -1,0 +1,75 @@
+//sidebar
+#sidebar, .sidebar {
+	margin: 15px 0;
+	z-index: 0;
+	h3 {
+		font-size: 2rem;
+	}
+	#searchform {
+		padding-bottom: 15px;
+		.form-control {
+			border: 1px $blue solid;
+			::placeholder {
+				color: $blue;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		.btn-primary {
+			background-color: $blue;
+			border: 1px $blue solid;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+	&-right {
+		margin-left: 30px;
+		z-index: 0;
+		// padding: 30px 15px;
+		ul {
+			list-style: none;
+			li {
+				a {
+					text-decoration: none;
+					&:hover {
+						color: $blue;
+					}
+				}
+				&.current_page_item {
+					a {
+						color: $blue;
+					}
+				}
+			}
+		}
+		ul.sidebar-menu {
+			ul.children {
+				padding-right: 20px;
+				li {
+					&:after {
+						content: '-';
+						position: absolute;
+						right: 0;
+						color: $orange;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	// wrapper
+	.right-sidebar {
+		.content-area {
+			float: left;
+			width: calc(100% - (300px + 45px));
+		}
+		#sidebar, .sidebar {
+			&-right {
+				width: 300px;
+			}
+		}
+	}
+}

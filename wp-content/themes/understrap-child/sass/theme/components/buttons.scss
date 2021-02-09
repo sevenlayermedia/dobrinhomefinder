@@ -1,0 +1,111 @@
+// buttons
+#wrapper, .wrapper {
+	&-alert {
+		a.btn {
+			display: inline-block;
+			margin: 5px 15px;
+			padding: 10px 20px;
+			color: #ffffff;
+			font-family: $font-family-sans-serif;
+			font-size: 0.875rem;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-color: $primary-color;
+			border: 1px solid $primary-color;
+			border-radius: 10px;
+			&:hover {
+				color: $base-color;
+				text-decoration: none;
+				background-color: $primary-color;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+	&-main-navbar {
+		a.btn {
+			display: inline-block;
+			margin: 5px 15px;
+			padding: 5px 10px;
+			color: #ffffff;
+			font-family: $font-family-sans-serif;
+			font-size: 0.875rem;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-color: $primary-color;
+			border: 1px solid $primary-color;
+			border-radius: 10px;
+			&:hover {
+				color: $base-color;
+				text-decoration: none;
+				background-color: $primary-color;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+			&:first-child {
+				margin-left: 1rem;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&-content, &-posts-archive {
+		.understrap-read-more-link {
+			display: none!important;
+		}
+		a.btn {
+			display: inline-block;
+			margin: 0;
+			padding: 10px 20px;
+			color: #ffffff;
+			font-family: $font-family-sans-serif;
+			font-size: 0.875rem;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-color: $primary-color;
+			border: 1px solid $primary-color;
+			border-radius: 10px;
+			&:hover {
+				color: $primary-color;
+				text-decoration: none;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+	&-pre-footer {
+		a.btn {
+			display: inline-block;
+			margin: 5px 15px;
+			padding: 10px 40px;
+			color: #ffffff;
+			font-family: $font-family-sans-serif;
+			font-size: 1.125rem;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-color: $primary-color;
+			border: 1px solid $primary-color;
+			border-radius: 10px;
+			&:hover {
+				color: $base-color;
+				text-decoration: none;
+				background-color: $primary-color;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}

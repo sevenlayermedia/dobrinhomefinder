@@ -1,0 +1,261 @@
+// cards
+#wrapper, .wrapper {
+	&-content {
+		.card {
+			margin-bottom: 15px;
+			border: none;
+			.col-heading {
+				position: absolute;
+				bottom: 0;
+				z-index: 2;
+				width: 75%;
+				padding-bottom: 0;
+				h2, h3, h4, h5, h6 {
+					margin-bottom: 0;
+					padding: 15px;
+					color: $base-color;
+					text-transform: uppercase;
+				}
+			}
+			img.bg-cover {
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+				height: 100%;
+				z-index: 1;
+			}
+			// &:last-child {
+			// 	margin-bottom: 0;
+			// }
+		}
+	}
+	&-posts, &-archive, &-news-archive, &-search, &-profile {
+		.grid-item {
+			.card {
+				border: none;
+				border-radius: 0;
+				box-shadow: 0 4px 8px 0 rgba(42,52,61,.15);
+				.sticky-top {
+					top: 115px;
+					z-index: 998;
+				}
+				&-img-top {
+					height: 350px;
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+				}
+				&-body {
+					padding: 10px;
+					h3.card-title {
+						font-size: 1.125rem;
+						a:hover {
+							color: $base-color;
+						}
+					}
+				}
+				&-footer {
+					padding: 10px;
+					background-color: transparent;
+					border: 0;
+				}
+				a {
+					text-decoration: none;
+				}
+				.post-category-news {
+					color: $base-color;
+				}
+				&:hover {
+					box-shadow: 0 4px 8px 0 rgba(42,52,61,.40);
+				}
+			}
+			// &:last-child {
+			// 	margin-bottom: 0;
+			// }
+		}
+	}
+	&-team {
+		.card-deck {
+			display: block;
+			.card {
+				border: none;
+				border-radius: 0;
+				box-shadow: 0 4px 8px 0 rgba(42,52,61,.15);
+				.sticky-top {
+					top: 115px;
+					z-index: 998;
+				}
+				.card-img {
+					border-radius: 0;
+				}
+				a, a:hover, a:active {
+					text-decoration: none!important;
+				}
+				&-body {
+					color: $base-color;
+					.card-title {
+						color: $base-color;
+					}
+				}
+				&-footer {
+					background-color: transparent;
+					border-top: 0;
+				}
+				&:hover {
+					text-decoration: none;
+					box-shadow: 0 4px 8px 0 rgba(42,52,61,.40);
+				}
+			}
+		}
+	}
+	&-offices {
+		.card-deck {
+			.card {
+				background-color: transparent;
+				border: none;
+				border-radius: 0;
+				box-shadow: 0 4px 8px 0 rgba(42,52,61,.15);
+				a, a:hover, a:active {
+					text-decoration: none!important;
+				}
+				&-body {
+					color: $base-color;
+					.card-title {
+						color: $base-color;
+					}
+				}
+				&-footer {
+					background-color: transparent;
+					border-top: 0;
+				}
+				&:hover {
+					text-decoration: none;
+					box-shadow: 0 4px 8px 0 rgba(42,52,61,.40);
+				}
+			}
+		}
+	}
+	// &-events, &-category-events {
+	// 	.card {
+	// 		border: none;
+	// 		border-radius: 0;
+	// 		a.btn-card {
+	// 			margin: 0;
+	// 			height: 100%;
+	// 			border: none;
+	// 			color: $base-color;
+	// 			text-decoration: none;
+	// 			background: none;
+	// 			.card-img-top {
+	// 				object-fit: cover;
+	// 				height: 275px;
+	// 				border-top-left-radius: 0;
+    // 			border-top-right-radius: 0;
+	// 			}
+	// 			h1, h2, h3, h4, h5, h6 {
+	// 				font-size: 1rem;
+	// 				text-transform: uppercase;
+	// 			}
+	// 			ul {
+	// 				list-style: none;
+	// 				padding: 0;
+	// 				li {
+	// 					padding: 0;
+	// 					&.event-cost {
+	// 						text-transform: uppercase;
+	// 					}
+	// 					i {
+	// 						width: 20px;
+	// 						text-align: left;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+	&-pre-footer {
+		.card {
+			margin-bottom: 15px;
+			.col-heading {
+				display: flex;
+				align-items: center!important;
+				justify-content: center!important;
+				position: absolute;
+				bottom: 83px;
+				z-index: 2;
+				width: 100%;
+				min-height: 100px;
+				padding-bottom: 0;
+				h2, h3, h4, h5, h6 {
+					margin-bottom: 0;
+					padding: 15px;
+					color: $base-color;
+					text-transform: capitalize;
+				}
+			}
+			.col-button {
+				display: flex;
+				align-items: center!important;
+				justify-content: center!important;
+				position: absolute;
+				bottom: 0px;
+				z-index: 2;
+				width: 100%;
+				padding-bottom: 0;
+				a.btn {
+					border: 1px solid $base-color;
+					background: transparent;
+					&:hover {
+						color: $blue;
+						background: transparent;
+					}
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	#wrapper, .wrapper {
+		&-content {
+			.card {
+				margin-bottom: 0;
+			}
+		}
+		&-posts, &-archive, &-search {
+			.grid-item {
+				// margin-bottom: 0;
+			}
+		}
+		&-pre-footer {
+			.card {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	#wrapper, .wrapper {
+		&-events, &-category-events {
+			.card {
+				a.btn-card {
+					.card-img-top {
+						height: 150px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	#wrapper, .wrapper {
+		&-team {
+			.card-deck {
+				display: flex;
+			}
+		}
+	}
+}

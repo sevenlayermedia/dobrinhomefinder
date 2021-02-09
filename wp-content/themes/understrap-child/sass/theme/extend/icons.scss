@@ -1,0 +1,56 @@
+// icons
+nav {
+	.search-icon {
+		margin-left: 20px;
+		padding: 5px 10px;
+		color: $base-color;
+		.fa {
+			font-size: 1.125rem;
+		}
+		&:hover {
+			color: $base-color;
+		}
+	}
+}
+// share list
+ul.share-list {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	li {
+		display: flex;
+		padding: 0;
+		a.share-social, a.share-email {
+			padding: 0 4px;
+			color: $base-color;
+			&:hover {
+				color: $base-color;
+				border-bottom: none;
+			}
+		}
+		&:last-child {
+			a.share-social, a.share-email {
+				padding-right: 0;
+			}
+		}
+	}
+}
+// social media
+footer {
+	.col-social-media {
+		ul.social {
+			display: inline-block;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li {
+				a {
+					color: $base-color;
+					.fa {
+						font-size: 1.875rem;
+					}
+				}
+			}
+		}
+	}
+}

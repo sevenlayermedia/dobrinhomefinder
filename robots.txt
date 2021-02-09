@@ -1,0 +1,19 @@
+# Disallowed and allowed directories and files
+
+User-agent: *
+# Allow: /
+# Allow: /wp-content/uploads/
+Disallow: /
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /comment-page-
+Disallow: /trackback/
+Disallow: /xmlrpc.php
+Disallow: /feed/
+
+# Define website sitemaps
+
+# Sitemap: https://domain/sitemap_index.xml
+
+Allow: /*.js$
+Allow: /*.css$

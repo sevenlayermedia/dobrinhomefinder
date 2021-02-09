@@ -1,0 +1,59 @@
+// collapse
+.accordion {
+	width: 100%;
+	.tabs {
+		overflow: hidden;
+	}
+	.tab {
+		width: 100%;
+		overflow: hidden;
+		&-label {
+			display: flex;
+			justify-content: flex-end;
+			position: absolute;
+			top: 0;
+			right: 35px;
+			margin-bottom: 0;
+			padding: 1rem 0;
+			color: $blue;
+			font-weight: 400;
+			background: transparent;
+			cursor: pointer;
+			/* icon */
+			&::before {
+				display: none;
+			}
+			&::after {
+				content: 'View Profile \002B';
+				width: auto;
+				height: 1.5rem;
+				text-align: center;
+				transition: all .35s;
+			}
+		}
+		&-content {
+			display: none;
+			padding: 0;
+			transition: all .35s;
+		}
+	}
+	input[type=checkbox] {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+	// :checked
+	input:checked {
+		+ .tab-label {
+			&::after {
+				content: 'Close Profile \2715';
+			}
+		}
+		~ .tab-content {
+			display: block;
+		}
+		~ .tab-content-excerpt {
+			display: none;
+		}
+	}
+}

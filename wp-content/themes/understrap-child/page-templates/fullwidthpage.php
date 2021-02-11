@@ -30,7 +30,7 @@ if(have_rows('page_header_content')):
 		endif;
 	endwhile;
 else:
-	get_template_part( 'global-templates/page-title', 'check' );
+	// get_template_part( 'global-templates/page-title', 'check' );
 endif;
 ?>
 <main class="site-main <?php if($page_background_toggle): echo $page_background_color; endif; ?>" id="main" role="main">

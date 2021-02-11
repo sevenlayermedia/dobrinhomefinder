@@ -25,6 +25,107 @@ header {
 			border-radius: 50%;
 		}
 	}
+	&-gallery {
+		.list-group {
+			flex-direction: row!important;
+			&-item {
+				padding: 1rem;
+				background-color: transparent;
+				border: none;
+				// inside border
+				// &:before{
+				// 	content:'';
+				// 	position: absolute;
+				// 	left: 8%;
+				// 	top: 8%;
+				// 	right: 8%;
+				// 	bottom: 8%;
+				// 	border: 1px solid white;
+				// }
+				.container {
+					display: block;
+					position: relative;
+					overflow: hidden;
+					&:first-child {
+						margin-top: 0;
+					}
+					img {
+						width: 100%;
+					}
+					h2 {
+						margin-bottom: 0;
+						font-size: 2.25rem;
+						color: #ffffff;
+					}
+					.overlay {
+						padding: 15px;
+						width:100%;
+						height:100%;
+						position:absolute;
+						overflow:hidden;
+						top:0;
+						left:0;
+						opacity:0;
+						background-color:rgba(0,0,0,0.5);
+						-webkit-transition:all .4s ease-in-out;
+						transition:all .4s ease-in-out;
+						cursor: pointer;
+					}
+					&:hover {
+						.overlay {
+							opacity:1;
+							filter:alpha(opacity=100);
+						}
+					}
+				}
+			}
+		}
+		.masonry {
+			column-count: 1;
+			-webkit-column-count: 1; /* chrome, safari, opera */
+			-moz-column-count: 1; /* firefox */
+			.container {
+				display: block;
+				position: relative;
+				overflow: hidden;
+				margin: 15px 0;
+				&:first-child {
+					margin-top: 0;
+				}
+				img {
+					width: 100%;
+				}
+				h2 {
+					margin-bottom: 0;
+					font-size: 2.25rem;
+					color: #ffffff;
+				}
+				.overlay {
+					padding: 15px;
+					width:100%;
+					height:100%;
+					position:absolute;
+					overflow:hidden;
+					top:0;
+					left:0;
+					opacity:0;
+					background-color:rgba(0,0,0,0.5);
+					-webkit-transition:all .4s ease-in-out;
+					transition:all .4s ease-in-out;
+					cursor: pointer;
+				}
+				&:hover {
+					.overlay {
+						opacity:1;
+						filter:alpha(opacity=100);
+					}
+				}
+			}
+		}
+		.carousel {
+
+		}
+	}
 	&-pre-footer {
 		img {
 			width: auto;

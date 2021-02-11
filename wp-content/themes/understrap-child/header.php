@@ -107,4 +107,22 @@ include(locate_template('inc/acf-variables.php'));
 		endwhile;
 	endif;
 	wp_reset_query();
+	// call to action loop
+	if(have_rows('page_header_content')):
+		// loop through the rows of data
+		while(have_rows('page_header_content')):the_row();
+			// check if the layout has rows of data
+			if( get_row_layout() == 'cta' ):
+				get_template_part( 'loop-templates/page-modules/cta', 'row' );
+			endif;
+		endwhile;
+	elseif(have_rows('header_content', 'option')):
+		// loop through the rows of data
+		while(have_rows('header_content', 'option')):the_row();
+			if( get_row_layout() == 'cta' ):
+				get_template_part( 'loop-templates/page-modules/cta', 'row' );
+			endif;
+		endwhile;
+	endif;
+	wp_reset_query();
 	?>

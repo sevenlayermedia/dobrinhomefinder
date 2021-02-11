@@ -158,14 +158,18 @@
 			// 	}
 			// }
 			.gsection {
+				margin: 0;
 				padding: 15px 0 0;
 				text-align: center;
 				background-color: $base-color;
 				h2 {
 					margin: 0;
-					padding-bottom: 10px;
 					font-size: 1.125rem;
 					color: #ffffff;
+				}
+				&_description {
+					padding: 10px 0 0;
+					margin-bottom: 0!important;
 				}
 			}
 			.noUi {

@@ -12874,14 +12874,17 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
   font-family: "Montserrat", sans-serif;
   text-align: left; }
   #wrapper .gform_wrapper .gsection, .wrapper .gform_wrapper .gsection, .jumbotron .gform_wrapper .gsection {
+    margin: 0;
     padding: 15px 0 0;
     text-align: center;
     background-color: #000000; }
     #wrapper .gform_wrapper .gsection h2, .wrapper .gform_wrapper .gsection h2, .jumbotron .gform_wrapper .gsection h2 {
       margin: 0;
-      padding-bottom: 10px;
       font-size: 1.125rem;
       color: #ffffff; }
+    #wrapper .gform_wrapper .gsection_description, .wrapper .gform_wrapper .gsection_description, .jumbotron .gform_wrapper .gsection_description {
+      padding: 10px 0 0;
+      margin-bottom: 0 !important; }
   #wrapper .gform_wrapper .noUi-target, .wrapper .gform_wrapper .noUi-target, .jumbotron .gform_wrapper .noUi-target {
     border: none;
     border-radius: 0;

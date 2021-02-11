@@ -86,7 +86,7 @@ include(locate_template('inc/acf-variables.php'));
 							loop: true
 						},
 						768: {
-							items: 2,
+							items: 1,
 							nav: true,
 							loop: true,
 							margin: 10

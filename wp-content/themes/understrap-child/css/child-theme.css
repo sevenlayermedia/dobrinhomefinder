@@ -13413,7 +13413,6 @@ footer .col-social-media ul.social {
 .owl-carousel {
   display: none;
   width: 100%;
-  height: 300px;
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
@@ -13437,7 +13436,6 @@ footer .col-social-media ul.social {
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-  height: 300px;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px); }
 
@@ -13488,7 +13486,7 @@ footer .col-social-media ul.social {
   -webkit-transform: scale(var(--ggs, 1));
           transform: scale(var(--ggs, 1));
   width: 30px;
-  height: 30px;
+  height: 42px;
   border: 2px solid transparent;
   border-radius: 100px; }
   .owl-carousel .owl-nav button.owl-prev span {
@@ -13516,7 +13514,7 @@ footer .col-social-media ul.social {
   -webkit-transform: scale(var(--ggs, 1));
           transform: scale(var(--ggs, 1));
   width: 30px;
-  height: 30px;
+  height: 42px;
   border: 2px solid transparent;
   border-radius: 100px; }
   .owl-carousel .owl-nav button.owl-next span {
@@ -13701,10 +13699,13 @@ footer .col-social-media ul.social {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  top: 115px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
   width: 100%;
   height: 0;
+  margin-top: -30px;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
 

@@ -41,6 +41,10 @@
 			border: 1px solid $base-color!important;
 			background-color: $base-color!important;
 		}
+		img {
+			border: 2px solid transparent;
+			border-radius: 20px;
+		}
 	}
 	input[type=radio] + label:before {
 		border-radius: 50%!important;
@@ -49,6 +53,10 @@
 		position: relative!important;
 		&:before {
 			background-color: $base-color!important;
+		}
+		img {
+			border: 2px solid $primary-color;
+			border-radius: 20px;
 		}
 	}
 	input[type=submit] {

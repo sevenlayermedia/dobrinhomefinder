@@ -12834,6 +12834,10 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
   border: 1px solid #000000 !important;
   background-color: #000000 !important; }
 
+#wrapper input[type=radio] + label img, #wrapper input[type=checkbox] + label img, .wrapper input[type=radio] + label img, .wrapper input[type=checkbox] + label img, .jumbotron input[type=radio] + label img, .jumbotron input[type=checkbox] + label img {
+  border: 2px solid transparent;
+  border-radius: 20px; }
+
 #wrapper input[type=radio] + label:before, .wrapper input[type=radio] + label:before, .jumbotron input[type=radio] + label:before {
   border-radius: 50% !important; }
 
@@ -12841,6 +12845,9 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
   position: relative !important; }
   #wrapper input[type=radio]:checked + label:before, #wrapper input[type=checkbox]:checked + label:before, .wrapper input[type=radio]:checked + label:before, .wrapper input[type=checkbox]:checked + label:before, .jumbotron input[type=radio]:checked + label:before, .jumbotron input[type=checkbox]:checked + label:before {
     background-color: #000000 !important; }
+  #wrapper input[type=radio]:checked + label img, #wrapper input[type=checkbox]:checked + label img, .wrapper input[type=radio]:checked + label img, .wrapper input[type=checkbox]:checked + label img, .jumbotron input[type=radio]:checked + label img, .jumbotron input[type=checkbox]:checked + label img {
+    border: 2px solid #ffd609;
+    border-radius: 20px; }
 
 #wrapper input[type=submit], .wrapper input[type=submit], .jumbotron input[type=submit] {
   display: inline-block;

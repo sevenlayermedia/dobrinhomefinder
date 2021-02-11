@@ -63,6 +63,25 @@ add_filter( 'acf/load_field/name=select_gf_form_id', 'acf_populate_gf_forms_ids'
 //   }
 // add_action ( 'manage_post_type_posts_custom_column', 'post_type_custom_column', 10, 2 );
 
+// layout title
+function custom_layout_title($title, $field, $layout, $i) {
+	$layout_settings = get_sub_field('layout_settings');
+	$layout_title = $layout_settings['layout_title'];
+	if($layout_title = $layout_settings['layout_title']) {
+		return $layout_title;
+	} else {
+		foreach($layout['sub_fields'] as $sub) {
+			if($sub['name'] == 'layout_title') {
+				$key = $sub['key'];
+				if(array_key_exists($i, $field['value']) && $value = $field['value'][$i][$key])
+					return $layout_title;
+			}
+		}
+	}
+	return $title;
+}
+add_filter('acf/fields/flexible_content/layout_title', 'custom_layout_title', 10, 4);
+
 // Google Map API settings.
 function my_acf_init() {
     $application_google_maps_api_key = get_field('application_google_maps_api_key', 'option');

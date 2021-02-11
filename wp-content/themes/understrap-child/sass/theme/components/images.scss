@@ -4,25 +4,15 @@ header {
 		img.logo {
 			width: 250px;
 		}
-		img.arrow-down {
-			width: 50px;
-		}
-		img.marker-underline {
-			width: 80px;
-		}
 	}
 }
 #wrapper, .wrapper {
 	&-content {
-		.logo {
-			width: 568px;
+		img.chevron-down {
+			width: 50px;
 		}
-		.icon {
-			width: 60px;
-		}
-		.avatar {
-			width: 100px;
-			border-radius: 50%;
+		img.marker-underline {
+			width: 80px;
 		}
 	}
 	&-gallery {

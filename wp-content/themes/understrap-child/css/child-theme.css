@@ -12830,9 +12830,7 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
   height: 18px !important;
   margin-right: 10px !important;
   vertical-align: middle !important;
-  cursor: pointer !important;
-  border: 1px solid #000000 !important;
-  background-color: #000000 !important; }
+  cursor: pointer !important; }
 
 #wrapper input[type=radio] + label img, #wrapper input[type=checkbox] + label img, .wrapper input[type=radio] + label img, .wrapper input[type=checkbox] + label img, .jumbotron input[type=radio] + label img, .jumbotron input[type=checkbox] + label img {
   border: 2px solid transparent;
@@ -12887,10 +12885,11 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
     background-color: #000000; }
     #wrapper .gform_wrapper .gsection h2, .wrapper .gform_wrapper .gsection h2, .jumbotron .gform_wrapper .gsection h2 {
       margin: 0;
+      padding-bottom: 10px !important;
       font-size: 1.125rem;
       color: #ffffff; }
     #wrapper .gform_wrapper .gsection_description, .wrapper .gform_wrapper .gsection_description, .jumbotron .gform_wrapper .gsection_description {
-      padding: 10px 0 0;
+      padding: 0;
       margin-bottom: 0 !important; }
   #wrapper .gform_wrapper .noUi-target, .wrapper .gform_wrapper .noUi-target, .jumbotron .gform_wrapper .noUi-target {
     border: none;
@@ -12917,6 +12916,10 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
     bottom: -32px;
     border: none;
     background: transparent; }
+  #wrapper .gform_wrapper .ginput_container_checkbox, .wrapper .gform_wrapper .ginput_container_checkbox, .jumbotron .gform_wrapper .ginput_container_checkbox {
+    text-align: center; }
+  #wrapper .gform_wrapper .ginput_container .slider-display, .wrapper .gform_wrapper .ginput_container .slider-display, .jumbotron .gform_wrapper .ginput_container .slider-display {
+    margin: 2.5rem 0; }
   #wrapper .gform_wrapper .gfield_radio, .wrapper .gform_wrapper .gfield_radio, .jumbotron .gform_wrapper .gfield_radio {
     margin: 6px 0;
     padding: 0;
@@ -12946,6 +12949,12 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
         #wrapper .gform_wrapper .gfield_checkbox li label img.card, .wrapper .gform_wrapper .gfield_checkbox li label img.card, .jumbotron .gform_wrapper .gfield_checkbox li label img.card {
           width: 80px;
           border: none; }
+      #wrapper .gform_wrapper .gfield_checkbox li.image-choices-choice, .wrapper .gform_wrapper .gfield_checkbox li.image-choices-choice, .jumbotron .gform_wrapper .gfield_checkbox li.image-choices-choice {
+        border: none !important; }
+        #wrapper .gform_wrapper .gfield_checkbox li.image-choices-choice-selected, .wrapper .gform_wrapper .gfield_checkbox li.image-choices-choice-selected, .jumbotron .gform_wrapper .gfield_checkbox li.image-choices-choice-selected {
+          border: none !important; }
+        #wrapper .gform_wrapper .gfield_checkbox li.image-choices-choice label, .wrapper .gform_wrapper .gfield_checkbox li.image-choices-choice label, .jumbotron .gform_wrapper .gfield_checkbox li.image-choices-choice label {
+          padding: 0 !important; }
   #wrapper .gform_wrapper ul.gform_fields, .wrapper .gform_wrapper ul.gform_fields, .jumbotron .gform_wrapper ul.gform_fields {
     list-style: none;
     padding: 0; }
@@ -12998,21 +13007,24 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
           width: 100%; }
         #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio], #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox], .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio], .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox], .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio], .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] {
           display: none; }
+        #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice {
+          border: none !important; }
+          #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice label, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice label, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice label, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice label, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice label, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice label {
+            padding: 0 !important; }
+          #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice-text, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice-text, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice-text, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice-text, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice-text, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice-text {
+            font-size: 10px; }
+          #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice-image-wrap, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice-image-wrap, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice-image-wrap, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice-image-wrap, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label .image-choices-choice-image-wrap, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label .image-choices-choice-image-wrap {
+            height: 130px;
+            border: 2px solid #ffffff;
+            border-radius: 10px; }
         #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label:before, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label:before, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label:before, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label:before, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label:before, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox] + label:before {
-          content: '';
-          display: inline-block;
-          width: 18px;
-          height: 18px;
-          margin-right: 10px;
-          vertical-align: middle;
-          cursor: pointer;
-          border: 2px solid transparent; }
+          display: none; }
         #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label:before, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label:before, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio] + label:before {
           border-radius: 50%; }
         #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label {
           position: relative; }
-          #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label:before, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label:before, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label:before, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label:before, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label:before, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label:before {
-            background-color: #000000; }
+          #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label .image-choices-choice-image-wrap, #wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label .image-choices-choice-image-wrap, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label .image-choices-choice-image-wrap, .wrapper .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label .image-choices-choice-image-wrap, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=radio]:checked + label .image-choices-choice-image-wrap, .jumbotron .gform_wrapper ul.gform_fields li.gfield input[type=checkbox]:checked + label .image-choices-choice-image-wrap {
+            border: 2px solid #ffd609; }
   #wrapper .gform_wrapper .gform_footer, #wrapper .gform_wrapper .gform_page_footer, .wrapper .gform_wrapper .gform_footer, .wrapper .gform_wrapper .gform_page_footer, .jumbotron .gform_wrapper .gform_footer, .jumbotron .gform_wrapper .gform_page_footer {
     text-align: center;
     border-top: none; }
@@ -13073,21 +13085,11 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
 header #wrapper img.logo, header .wrapper img.logo {
   width: 250px; }
 
-header #wrapper img.arrow-down, header .wrapper img.arrow-down {
+#wrapper-content img.chevron-down, .wrapper-content img.chevron-down {
   width: 50px; }
 
-header #wrapper img.marker-underline, header .wrapper img.marker-underline {
+#wrapper-content img.marker-underline, .wrapper-content img.marker-underline {
   width: 80px; }
-
-#wrapper-content .logo, .wrapper-content .logo {
-  width: 568px; }
-
-#wrapper-content .icon, .wrapper-content .icon {
-  width: 60px; }
-
-#wrapper-content .avatar, .wrapper-content .avatar {
-  width: 100px;
-  border-radius: 50%; }
 
 #wrapper-gallery .list-group, .wrapper-gallery .list-group {
   -webkit-box-orient: horizontal !important;

@@ -38,8 +38,8 @@
 			margin-right: 10px!important;
 			vertical-align: middle!important;
 			cursor: pointer!important;
-			border: 1px solid $base-color!important;
-			background-color: $base-color!important;
+			// border: 1px solid $base-color!important;
+			// background-color: $base-color!important;
 		}
 		img {
 			border: 2px solid transparent;
@@ -172,11 +172,12 @@
 				background-color: $base-color;
 				h2 {
 					margin: 0;
+					padding-bottom: 10px!important;
 					font-size: 1.125rem;
 					color: #ffffff;
 				}
 				&_description {
-					padding: 10px 0 0;
+					padding: 0;
 					margin-bottom: 0!important;
 				}
 			}
@@ -209,6 +210,14 @@
 					bottom: -32px;
 					border: none;
 					background: transparent;
+				}
+			}
+			.ginput_container {
+				&_checkbox {
+					text-align: center;
+				}
+				.slider-display {
+					margin: 2.5rem 0;
 				}
 			}
 			.gfield {
@@ -246,6 +255,15 @@
 							img.card {
 								width: 80px;
 								border: none;
+							}
+						}
+						&.image-choices-choice {
+							border: none!important;
+							&-selected {
+								border: none!important;
+							}
+							label {
+								padding: 0!important;
 							}
 						}
 					}
@@ -307,17 +325,35 @@
 						input[type=radio], input[type=checkbox] {
 							display: none;
 						}
-						input[type=radio] + label:before, input[type=checkbox] + label:before {
-							content: '';  
-							display:inline-block;
-							width: 18px;
-							height: 18px;
-							margin-right: 10px;
-							vertical-align: middle;
-							cursor: pointer;
-							border: 2px solid transparent;
-							// background-color: $primary-color;
+						input[type=radio] + label, input[type=checkbox] + label {
+							.image-choices-choice {
+								border: none!important;
+								label {
+									padding: 0!important;
+								}
+								&-text {
+									font-size: 10px;
+								}
+								&-image-wrap {
+									height: 130px;
+									border: 2px solid #ffffff;
+									border-radius: 10px;
+								}
+							}
+							&:before {
+								display: none;
+							}
 						}
+						// input[type=radio] + label:before, input[type=checkbox] + label:before {
+						// 	content: '';  
+						// 	display:inline-block;
+						// 	width: 18px;
+						// 	height: 18px;
+						// 	margin-right: 10px;
+						// 	vertical-align: middle;
+						// 	cursor: pointer;
+						// 	border: 2px solid transparent;
+						// }
 						input[type=radio] + label:before {
 							border-radius: 50%;
 						}
@@ -335,9 +371,11 @@
 							//   display: inline-block;
 							//   cursor:pointer;
 							// }
-						  &:before {
-							background-color: $base-color;
-						  }
+							.image-choices-choice {
+								&-image-wrap {
+									border: 2px solid $primary-color;
+								}
+							}
 						}
 					}
 				}

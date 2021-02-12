@@ -301,6 +301,9 @@
 							color: $base-color;
 							text-transform: uppercase;
 						}
+						.gfield_required {
+							display: none;
+						}
 						input, textarea {
 							width: 100%;
 							color: $base-color;
@@ -390,7 +393,7 @@
 				}
 				input[type=submit], input.button {
 					display: inline-block;
-					margin: 0;
+					margin: 10px 0;
 					padding: 10px 20px;
 					color: $base-color;
 					font-family: $font-family-cursive;

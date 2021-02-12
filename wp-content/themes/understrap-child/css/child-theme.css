@@ -11887,12 +11887,15 @@ h3 {
 .cursive {
   font-family: "Staatliches", cursive; }
 
+.text-yellow {
+  color: #ffd609; }
+
 #wrapper-alert p, .wrapper-alert p {
   margin-bottom: 0; }
 
 #wrapper-content p, .wrapper-content p {
-  padding-bottom: 1.25rem;
-  font-size: 1rem;
+  padding-bottom: 0;
+  font-size: 1.125rem;
   font-weight: 400; }
   #wrapper-content p a, #wrapper-content p a:hover, #wrapper-content p a:active, .wrapper-content p a, .wrapper-content p a:hover, .wrapper-content p a:active {
     color: #000000;
@@ -11972,8 +11975,6 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
 @media (min-width: 992px) {
   #wrapper-content h1, .wrapper-content h1 {
     font-size: 4rem; }
-  #wrapper-content p, .wrapper-content p {
-    font-size: 1rem; }
   #wrapper-content ul.list-styled li.list-item, .wrapper-content ul.list-styled li.list-item {
     font-size: 1rem; } }
 
@@ -12990,6 +12991,8 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
         #wrapper .gform_wrapper ul.gform_fields li.gfield label, #wrapper .gform_wrapper ul.gform_fields li.gfield .gfield_required, .wrapper .gform_wrapper ul.gform_fields li.gfield label, .wrapper .gform_wrapper ul.gform_fields li.gfield .gfield_required, .jumbotron .gform_wrapper ul.gform_fields li.gfield label, .jumbotron .gform_wrapper ul.gform_fields li.gfield .gfield_required {
           color: #000000;
           text-transform: uppercase; }
+        #wrapper .gform_wrapper ul.gform_fields li.gfield .gfield_required, .wrapper .gform_wrapper ul.gform_fields li.gfield .gfield_required, .jumbotron .gform_wrapper ul.gform_fields li.gfield .gfield_required {
+          display: none; }
         #wrapper .gform_wrapper ul.gform_fields li.gfield input, #wrapper .gform_wrapper ul.gform_fields li.gfield textarea, .wrapper .gform_wrapper ul.gform_fields li.gfield input, .wrapper .gform_wrapper ul.gform_fields li.gfield textarea, .jumbotron .gform_wrapper ul.gform_fields li.gfield input, .jumbotron .gform_wrapper ul.gform_fields li.gfield textarea {
           width: 100%;
           color: #000000;
@@ -13042,7 +13045,7 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
       border-radius: 0; }
     #wrapper .gform_wrapper .gform_footer input[type=submit], #wrapper .gform_wrapper .gform_footer input.button, #wrapper .gform_wrapper .gform_page_footer input[type=submit], #wrapper .gform_wrapper .gform_page_footer input.button, .wrapper .gform_wrapper .gform_footer input[type=submit], .wrapper .gform_wrapper .gform_footer input.button, .wrapper .gform_wrapper .gform_page_footer input[type=submit], .wrapper .gform_wrapper .gform_page_footer input.button, .jumbotron .gform_wrapper .gform_footer input[type=submit], .jumbotron .gform_wrapper .gform_footer input.button, .jumbotron .gform_wrapper .gform_page_footer input[type=submit], .jumbotron .gform_wrapper .gform_page_footer input.button {
       display: inline-block;
-      margin: 0;
+      margin: 10px 0;
       padding: 10px 20px;
       color: #000000;
       font-family: "Staatliches", cursive;

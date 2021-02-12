@@ -38,6 +38,9 @@ h3 {
 .cursive {
 	font-family: $font-family-cursive;
 }
+.text-yellow {
+	color: $primary-color;
+}
 #wrapper, .wrapper {
 	&-alert {
 		p {
@@ -46,8 +49,8 @@ h3 {
 	}
 	&-content {
 		p {
-			padding-bottom: 1.25rem;
-			font-size: 1rem;
+			padding-bottom: 0;
+			font-size: 1.125rem;
 			font-weight: 400;
 			a, a:hover, a:active {
 				color: $base-color;
@@ -157,9 +160,6 @@ footer {
 		&-content {
 			h1 {
 				font-size: 4rem;
-			}
-			p {
-				font-size: 1rem;
 			}
 			ul.list-styled {
 				li.list-item {

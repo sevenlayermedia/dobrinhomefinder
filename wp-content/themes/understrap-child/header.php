@@ -21,6 +21,17 @@ include(locate_template('inc/acf-variables.php'));
 		})(window,document,'script','dataLayer','<?php echo $application_google_tag_manager; ?>');</script>
 		<!-- End Google Tag Manager -->
 	<?php endif; ?>
+	<?php if($applications && in_array('Google Analytics', $applications)): // check for google tag manager option ?>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $application_google_analytics_id; ?>"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', '<?php echo $application_google_analytics_id; ?>');
+		</script>
+	<?php endif; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

@@ -388,5 +388,6 @@ $row_background_image = $row_background['background_image'];
     // intergrations
     $applications = get_field('enqueue_applications', 'option');
     $application_google_tag_manager = get_field('application_google_tag_manager', 'option');
+    $application_google_analytics_id = get_field('application_google_analytics_id', 'option');
     $application_google_maps_api_key = get_field('application_google_maps_api_key', 'option');
 ?>

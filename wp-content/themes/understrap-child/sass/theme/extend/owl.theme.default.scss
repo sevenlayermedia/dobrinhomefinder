@@ -18,6 +18,11 @@
   margin-top: -30px;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
+  .owl-nav-none {
+    .owl-nav {
+      display: none;
+    }
+  }
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
     font-size: 14px;
@@ -38,9 +43,24 @@
   margin-top: 10px; }
 
 .owl-theme .owl-dots {
-  display: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 22%;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
+  .owl-dots-none {
+    .owl-dots {
+      display: none;
+    }
+  }
+  @media (min-width: 576px) {
+    .owl-dots-sm-inline {
+      .owl-dots {
+        display: inline;
+      }
+    }
+  }
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;

@@ -6,10 +6,10 @@
 		width: 100%!important;
 		margin: 0!important;
 		margin-bottom: 10px!important;
-		padding: 10px!important;
+		padding: 10px 0!important;
 		color: $base-color!important;
 		border: 0!important;
-		border-bottom: 2px solid $primary-color!important;
+		border-bottom: 1px solid $base-color!important;
 		border-radius: 0!important;
 		background-color: #fff!important;
 		-webkit-appearance: none!important;
@@ -213,6 +213,7 @@
 				}
 			}
 			.ginput_container {
+				width: 100%!important;
 				&_checkbox {
 					text-align: center;
 				}
@@ -273,10 +274,11 @@
 				list-style: none;
 				padding: 0;
 				span.name_first {
+					float: left;
 					display: inline-block;
 					width: 50%;
-					margin-right: 2px;
-					padding-right: 8px;
+					margin-right: 0;
+					padding-right: 0;
 					label {
 						display: none;
 					}
@@ -285,8 +287,8 @@
 					position: relative;
 					display: inline-block;
 					width: 50%;
-					margin-right: -8px;
-					padding-right: 6px;
+					margin-right: 0;
+					padding-right: 0;
 					label {
 						display: none;
 					}
@@ -434,8 +436,8 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 50%;
-		margin-right: 8px;
-		padding-right: 8px;
+		margin-right: 0;
+		padding-right: 0;
 	}
 	.gf_right_half, .ginput_right {
 		position: relative;

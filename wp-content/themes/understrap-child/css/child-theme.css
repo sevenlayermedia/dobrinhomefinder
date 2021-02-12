@@ -11829,6 +11829,10 @@ a.skip-link {
 .yellow-bg {
   background-color: #ffd609; }
 
+.position-absolute-gallery {
+  position: absolute;
+  top: 6%; }
+
 .bg-position-top {
   background-position: top !important; }
 
@@ -11857,9 +11861,10 @@ h1 {
   margin-bottom: 0;
   color: #000000;
   font-family: "Staatliches", cursive;
-  font-size: 2.1875rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1; }
 
 h2 {
   display: inline-block;
@@ -11867,7 +11872,7 @@ h2 {
   padding-bottom: 0;
   color: #ffffff;
   font-family: "Staatliches", cursive;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -11958,15 +11963,15 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
   width: 1px !important;
   overflow: hidden; }
 
+@media (min-width: 576px) {
+  #wrapper-content h1, .wrapper-content h1 {
+    font-size: 3rem; }
+  #wrapper-content h2, .wrapper-content h2 {
+    font-size: 1.5rem; } }
+
 @media (min-width: 992px) {
   #wrapper-content p, .wrapper-content p {
     font-size: 1rem; }
-  #wrapper-content h1, .wrapper-content h1 {
-    color: #000000;
-    font-family: "Staatliches", cursive;
-    font-size: 2.1875rem;
-    font-weight: 500;
-    text-transform: uppercase; }
   #wrapper-content ul.list-styled li.list-item, .wrapper-content ul.list-styled li.list-item {
     font-size: 1rem; } }
 
@@ -12791,10 +12796,10 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
   width: 100% !important;
   margin: 0 !important;
   margin-bottom: 10px !important;
-  padding: 10px !important;
+  padding: 10px 0 !important;
   color: #000000 !important;
   border: 0 !important;
-  border-bottom: 2px solid #ffd609 !important;
+  border-bottom: 1px solid #000000 !important;
   border-radius: 0 !important;
   background-color: #fff !important;
   -webkit-appearance: none !important;
@@ -12916,10 +12921,12 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
     bottom: -32px;
     border: none;
     background: transparent; }
-  #wrapper .gform_wrapper .ginput_container_checkbox, .wrapper .gform_wrapper .ginput_container_checkbox, .jumbotron .gform_wrapper .ginput_container_checkbox {
-    text-align: center; }
-  #wrapper .gform_wrapper .ginput_container .slider-display, .wrapper .gform_wrapper .ginput_container .slider-display, .jumbotron .gform_wrapper .ginput_container .slider-display {
-    margin: 2.5rem 0; }
+  #wrapper .gform_wrapper .ginput_container, .wrapper .gform_wrapper .ginput_container, .jumbotron .gform_wrapper .ginput_container {
+    width: 100% !important; }
+    #wrapper .gform_wrapper .ginput_container_checkbox, .wrapper .gform_wrapper .ginput_container_checkbox, .jumbotron .gform_wrapper .ginput_container_checkbox {
+      text-align: center; }
+    #wrapper .gform_wrapper .ginput_container .slider-display, .wrapper .gform_wrapper .ginput_container .slider-display, .jumbotron .gform_wrapper .ginput_container .slider-display {
+      margin: 2.5rem 0; }
   #wrapper .gform_wrapper .gfield_radio, .wrapper .gform_wrapper .gfield_radio, .jumbotron .gform_wrapper .gfield_radio {
     margin: 6px 0;
     padding: 0;
@@ -12959,18 +12966,19 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
     list-style: none;
     padding: 0; }
     #wrapper .gform_wrapper ul.gform_fields span.name_first, .wrapper .gform_wrapper ul.gform_fields span.name_first, .jumbotron .gform_wrapper ul.gform_fields span.name_first {
+      float: left;
       display: inline-block;
       width: 50%;
-      margin-right: 2px;
-      padding-right: 8px; }
+      margin-right: 0;
+      padding-right: 0; }
       #wrapper .gform_wrapper ul.gform_fields span.name_first label, .wrapper .gform_wrapper ul.gform_fields span.name_first label, .jumbotron .gform_wrapper ul.gform_fields span.name_first label {
         display: none; }
     #wrapper .gform_wrapper ul.gform_fields span.name_last, .wrapper .gform_wrapper ul.gform_fields span.name_last, .jumbotron .gform_wrapper ul.gform_fields span.name_last {
       position: relative;
       display: inline-block;
       width: 50%;
-      margin-right: -8px;
-      padding-right: 6px; }
+      margin-right: 0;
+      padding-right: 0; }
       #wrapper .gform_wrapper ul.gform_fields span.name_last label, .wrapper .gform_wrapper ul.gform_fields span.name_last label, .jumbotron .gform_wrapper ul.gform_fields span.name_last label {
         display: none; }
     #wrapper .gform_wrapper ul.gform_fields li, .wrapper .gform_wrapper ul.gform_fields li, .jumbotron .gform_wrapper ul.gform_fields li {
@@ -13065,8 +13073,8 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
     display: inline-block;
     vertical-align: top;
     width: 50%;
-    margin-right: 8px;
-    padding-right: 8px; }
+    margin-right: 0;
+    padding-right: 0; }
   .gf_right_half, .ginput_right {
     position: relative;
     display: inline-block;
@@ -13721,6 +13729,9 @@ footer .col-social-media ul.social {
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
 
+.owl-nav-none .owl-nav {
+  display: none; }
+
 .owl-theme .owl-nav [class*='owl-'] {
   color: #FFF;
   font-size: 14px;
@@ -13743,9 +13754,19 @@ footer .col-social-media ul.social {
   margin-top: 10px; }
 
 .owl-theme .owl-dots {
-  display: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 22%;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
+
+.owl-dots-none .owl-dots {
+  display: none; }
+
+@media (min-width: 576px) {
+  .owl-dots-sm-inline .owl-dots {
+    display: inline; } }
 
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;

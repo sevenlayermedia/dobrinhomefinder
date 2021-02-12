@@ -20,7 +20,7 @@ include(locate_template('inc/acf-variables.php'));
 					<?php bloginfo( 'name' );?>
 				<?php endif; ?>
 			</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-toggler-right d-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
 			</button>
 			<!-- The WordPress Menu goes here -->

@@ -4,6 +4,11 @@
 		background-color: $primary-color;
 	}
 // positioning
+	// gallery
+	.position-absolute-gallery {
+		position: absolute;
+		top: 6%;
+	}
 	// backgrounds
 	.bg-position-top {
 		background-position: top!important;

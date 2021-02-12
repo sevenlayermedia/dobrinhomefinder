@@ -173,18 +173,20 @@ $row_background_image = $row_background['background_image'];
         // gallery
         $gallery_group = get_sub_field('gallery_group');
         $gallery_random_images = $gallery_group['gallery_random_images'];
-        $gallery_options = $gallery_group['gallery_options'];
+        $gallery_layout = $gallery_group['gallery_layout'];
+        $gallery_id = $gallery_group['gallery_id'];
+        $gallery_options = $gallery_options['gallery_options'];
         $gallery = $gallery_group['gallery'];
         // product
-        $product_image = get_field('product_image');
-        $product_image_size = 'full'; // (thumbnail, medium, large, full or custom size)
-        $product_description = get_field('product_description');
-        $product_specifications = get_field('product_specifications');
-        $product_specifications_key = get_sub_field('key');
-        $product_specifications_value = get_sub_field('value');
+        // $product_image = get_field('product_image');
+        // $product_image_size = 'full'; // (thumbnail, medium, large, full or custom size)
+        // $product_description = get_field('product_description');
+        // $product_specifications = get_field('product_specifications');
+        // $product_specifications_key = get_sub_field('key');
+        // $product_specifications_value = get_sub_field('value');
         // distributor
-        $distributor_location = get_field('office_address');
-        $distributor_address = explode(',',$distributor_location['address']);
+        // $distributor_location = get_field('office_address');
+        // $distributor_address = explode(',',$distributor_location['address']);
         // office
         // $office_location = get_field('office_address');
         // $office_address = explode(',',$office_location['address']);

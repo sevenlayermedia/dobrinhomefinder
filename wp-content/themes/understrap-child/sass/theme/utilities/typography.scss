@@ -12,9 +12,10 @@ h1 {
 	margin-bottom: 0;
 	color: $base-color;
 	font-family: $font-family-cursive;
-	font-size: 2.1875rem;
+	font-size: 1.125rem;
 	font-weight: 500;
 	text-transform: uppercase;
+	line-height: 1;
 }
 h2 {
 	display: inline-block;
@@ -22,7 +23,7 @@ h2 {
 	padding-bottom: 0;
 	color: #ffffff;
 	font-family: $font-family-cursive;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -139,18 +140,23 @@ footer {
 	overflow: hidden;
 }
 // desktop view
+@media (min-width: 576px) {
+	#wrapper, .wrapper {
+		&-content {
+			h1 {
+				font-size: 3rem;
+			}
+			h2 {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
 @media (min-width: 992px) {
 	#wrapper, .wrapper {
 		&-content {
 			p {
 				font-size: 1rem;
-			}
-			h1 {
-				color: $base-color;
-				font-family: $font-family-cursive;
-				font-size: 2.1875rem;
-				font-weight: 500;
-				text-transform: uppercase;
 			}
 			ul.list-styled {
 				li.list-item {

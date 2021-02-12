@@ -11861,7 +11861,7 @@ h1 {
   margin-bottom: 0;
   color: #000000;
   font-family: "Staatliches", cursive;
-  font-size: 1.125rem;
+  font-size: 1.75rem;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1; }
@@ -11872,7 +11872,7 @@ h2 {
   padding-bottom: 0;
   color: #ffffff;
   font-family: "Staatliches", cursive;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -11970,6 +11970,8 @@ footer #wrapper-content .col-copyright, footer .wrapper-content .col-copyright {
     font-size: 1.5rem; } }
 
 @media (min-width: 992px) {
+  #wrapper-content h1, .wrapper-content h1 {
+    font-size: 4rem; }
   #wrapper-content p, .wrapper-content p {
     font-size: 1rem; }
   #wrapper-content ul.list-styled li.list-item, .wrapper-content ul.list-styled li.list-item {
@@ -13097,7 +13099,7 @@ header #wrapper img.logo, header .wrapper img.logo {
   width: 50px; }
 
 #wrapper-content img.marker-underline, .wrapper-content img.marker-underline {
-  width: 80px; }
+  width: 20%; }
 
 #wrapper-gallery .list-group, .wrapper-gallery .list-group {
   -webkit-box-orient: horizontal !important;
@@ -13190,6 +13192,10 @@ header #wrapper img.logo, header .wrapper img.logo {
 
 footer #wrapper img.logo-equal-housing, footer .wrapper img.logo-equal-housing {
   width: 80px; }
+
+@media (min-width: 768px) {
+  #wrapper-content img.marker-underline, .wrapper-content img.marker-underline {
+    width: 50%; } }
 
 @media (min-width: 992px) {
   #wrapper-content .icon, .wrapper-content .icon {

@@ -12,7 +12,7 @@ header {
 			width: 50px;
 		}
 		img.marker-underline {
-			width: 80px;
+			width: 20%;
 		}
 	}
 	&-gallery {
@@ -140,6 +140,15 @@ footer {
 	#wrapper, .wrapper {
 		img.logo-equal-housing {
 			width: 80px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	#wrapper, .wrapper {
+		&-content {
+			img.marker-underline {
+				width: 50%;
+			}
 		}
 	}
 }

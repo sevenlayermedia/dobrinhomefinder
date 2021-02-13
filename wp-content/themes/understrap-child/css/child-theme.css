@@ -11831,7 +11831,11 @@ a.skip-link {
 
 .position-absolute-gallery {
   position: absolute;
-  top: 6%; }
+  top: 4%; }
+
+@media (min-width: 768px) {
+  .position-absolute-gallery {
+    top: 6%; } }
 
 .bg-position-top {
   background-position: top !important; }
@@ -11861,7 +11865,7 @@ h1 {
   margin-bottom: 0;
   color: #000000;
   font-family: "Staatliches", cursive;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;

@@ -7,7 +7,12 @@
 	// gallery
 	.position-absolute-gallery {
 		position: absolute;
-		top: 6%;
+		top: 4%;
+	}
+	@media (min-width: 768px) {
+		.position-absolute-gallery {
+			top: 6%;
+		}
 	}
 	// backgrounds
 	.bg-position-top {

@@ -353,7 +353,7 @@ $(document).ready(function(){
 });
 </script>
 <!-- compiled scripts -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 jQuery(document).ready(function ($) {
 	var nav = $('.navbar');
 	var navicon = $('.navbar-toggler-icon i');
@@ -403,4 +403,4 @@ jQuery(document).ready(function ($) {
 		nav.addClass('navbar-refresh');
 	}
 });
-</script>
+</script> -->

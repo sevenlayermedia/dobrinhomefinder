@@ -41,11 +41,11 @@ include(locate_template('inc/acf-variables.php'));
 	<!-- <meta name="msapplication-TileColor" content="#006a99">
 	<meta name="msapplication-config" content="<?php echo get_stylesheet_directory_uri(); ?>/images/browserconfig.xml">
 	<meta name="theme-color" content="#006a99">
-	<link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/manifest.json">
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon-16x16.png">
-	<link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/safari-pinned-tab.svg" color="#2b4a6f">
+	<link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/manifest.json"> -->
+	<?php if($favicon_180x180): ?><link rel="apple-touch-icon" sizes="180x180" href="<?php echo $favicon_180x180; ?>"><?php endif; ?>
+	<?php if($favicon_32x32): ?><link rel="icon" type="image/png" sizes="32x32" href="<?php echo $favicon_32x32; ?>"><?php endif; ?>
+	<?php if($favicon_16x16): ?><link rel="icon" sizes="16x16" href="<?php echo $favicon_16x16; ?>"><?php endif; ?>
+	<!-- <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/safari-pinned-tab.svg" color="#2b4a6f">
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico"> -->
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

@@ -304,15 +304,20 @@ $row_background_image = $row_background['background_image'];
     // brand
         // logo
         $site_primary_logo = get_field('site_primary_logo', 'option');
-        $site_primary_logo_svg = get_field('site_primary_logo_svg', 'option');
+        // $site_primary_logo_svg = get_field('site_primary_logo_svg', 'option');
         $site_alternate_logo = get_field('site_alternate_logo', 'option');
-        $site_alternate_logo_svg = get_field('site_alternate_logo_svg', 'option');
+        // $site_alternate_logo_svg = get_field('site_alternate_logo_svg', 'option');
         // and the image size you want to return
         $site_primary_logo_size = 'logo';
         $site_alternate_logo_size = 'logo';
         // now, we'll exctract the image URL from $image_object
         // $site_primary_logo_url = $site_primary_logo['sizes'][$site_primary_logo_size];
         // $site_alternate_logo_url = $site_alternate_logo['sizes'][$site_alternate_logo_size];
+        // favicons
+        $favicons = get_field('favicons', 'option');
+        $favicon_16x16 = $favicons['favicon_16x16'];
+        $favicon_32x32 = $favicons['favicon_32x132'];
+        $favicon_180x180 = $favicons['favicon_180x180'];
     // social
     $social_facebook = get_field('social_facebook', 'option');
     $social_twitter = get_field('social_twitter', 'option');

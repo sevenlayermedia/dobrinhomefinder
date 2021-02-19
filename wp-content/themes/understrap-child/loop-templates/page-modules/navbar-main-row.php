@@ -12,9 +12,7 @@ include(locate_template('inc/acf-variables.php'));
 		<div class="<?php if(($container_fluid) == true): echo 'container-fluid'; else: echo 'container px-sm-2'; endif; ?><?php if($container_class): echo ' ' . $container_class; endif; ?>" <?php if($container_background_color || $container_background_image): ?>style="<?php if($container_background_color): echo 'background-color: ' . $container_background_color; endif; ?><?php if($container_background_color && $container_background_image): echo '; '; endif; ?><?php if($container_background_image): echo 'background-image: url(' . $container_background_image['url'] . ')'; endif ?>"<?php endif; ?>>
 			<!-- Your site title as branding -->
 			<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<?php if($site_primary_logo_svg): ?>
-					<img src="<?php echo $site_primary_logo_svg['url']; ?>" alt="<?php bloginfo( 'name' );?>" class="logo" width="auto" height="auto" data-no-retina>
-				<?php elseif($site_primary_logo): ?>
+				<?php if($site_primary_logo): ?>
 					<img src="<?php echo $site_primary_logo['url']; ?>" alt="<?php bloginfo( 'name' );?>" class="logo" width="300" height="auto" data-no-retina>
 				<?php else: ?>
 					<?php bloginfo( 'name' );?>

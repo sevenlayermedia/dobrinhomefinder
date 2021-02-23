@@ -29814,6 +29814,7 @@ if(function_exists('acf_add_local_field_group')):
 					'Cookies' => 'Cookies',
 					'Isotope Filter & Sort' => 'Isotope Filter & Sort',
 					'Modernizr' => 'Modernizr',
+					'Smooth Scroll' => 'Smooth Scroll',
 					'Social Share' => 'Social Share',
 					'Viewport Checker' => 'Viewport Checker',
 				),
